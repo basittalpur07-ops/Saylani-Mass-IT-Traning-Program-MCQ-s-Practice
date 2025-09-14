@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://saylani-entry-test-practice.vercel.app/sitemap.xml
+

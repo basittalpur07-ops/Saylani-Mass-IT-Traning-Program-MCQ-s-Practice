@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/png">
+    
+
+    <title>Saylani Entry Test Practice</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Free MCQs practice website for Saylani Entry Test. Subjects include English, Math, General Knowledge, Islamiat, IQ, and Computer. Includes Light and Dark mode with results review.">
+    <meta name="keywords"
+        content="Saylani, MCQs, Entry Test, Practice, preparation, SMIT, Past, Papers, Online Test, Quiz, English, Math, Islamiat, General Knowledge, IQ, Computer">
+    <meta name="author" content="Muneeb Rashid">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <meta property="og:title" content="Saylani Entry Test Practice">
+    <meta property="og:description"
+        content="Practice free MCQs for Saylani Entry Test with full review and subject-wise quiz.">
+    <meta property="og:url" content="https://m-muneebweb.github.io/Saylani-entry-test-practice/">
+    <meta property="og:type" content="website">
+    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4X8YDZDTX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Y4X8YDZDTX');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7679492337080449"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Saylani Entry Test Practice</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="faqs.html" class="nav-link">FAQs</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="terms.html" class="nav-link">Terms</a>
+                <a href="privacy.html" class="nav-link">Privacy</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Master Your Saylani Entry Test</h1>
+            <p class="hero-subtitle">Practice with thousands of MCQs across 6 subjects and boost your confidence</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <i class="fas fa-book"></i>
+                    <span>6 Subjects</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-question-circle"></i>
+                    <span>1000+ MCQs</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-clock"></i>
+                    <span>Timed Practice</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-animation">
+            <div class="floating-icons">
+                <i class="fas fa-brain"></i>
+                <i class="fas fa-laptop"></i>
+                <i class="fas fa-calculator"></i>
+                <i class="fas fa-mosque"></i>
+                <i class="fas fa-globe"></i>
+                <i class="fas fa-language"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section class="subjects">
+        <div class="container">
+            <h2 class="section-title">Choose Your Subject</h2>
+            <div class="subjects-grid">
+                <div class="subject-card" data-subject="iq">
+                    <div class="subject-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>IQ Test</h3>
+                    <p>Logical reasoning and analytical thinking questions</p>
+                    <button class="start-btn" onclick="startTest('iq')">Start Practice</button>
+                </div>
+
+                <div class="subject-card" data-subject="computer">
+                    <div class="subject-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Computer</h3>
+                    <p>Basic computer knowledge and programming concepts</p>
+                    <button class="start-btn" onclick="startTest('computer')">Start Practice</button>
+                </div>
+
+                <div class="subject-card" data-subject="math">
+                    <div class="subject-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Mathematics</h3>
+                    <p>Arithmetic, algebra, and basic mathematical concepts</p>
+                    <button class="start-btn" onclick="startTest('math')">Start Practice</button>
+                </div>
+
+                <div class="subject-card" data-subject="islamiat">
+                    <div class="subject-icon">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <h3>Islamiat</h3>
+                    <p>Islamic studies and religious knowledge</p>
+                    <button class="start-btn" onclick="startTest('islamiat')">Start Practice</button>
+                </div>
+
+                <div class="subject-card" data-subject="general">
+                    <div class="subject-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>General Knowledge</h3>
+                    <p>Current affairs, history, and general awareness</p>
+                    <button class="start-btn" onclick="startTest('general')">Start Practice</button>
+                </div>
+
+                <div class="subject-card" data-subject="english">
+                    <div class="subject-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>English</h3>
+                    <p>Grammar, vocabulary, and comprehension</p>
+                    <button class="start-btn" onclick="startTest('english')">Start Practice</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Platform?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-random"></i>
+                    <h3>Random Questions</h3>
+                    <p>Questions and answers are randomized for better practice</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-stopwatch"></i>
+                    <h3>Timed Tests</h3>
+                    <p>Practice with real exam time constraints</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Anti-Cheat System</h3>
+                    <p>Full-screen mode with cheat detection</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Detailed Results</h3>
+                    <p>Get explanations for each question</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MCQ Test Interface (Hidden by default) -->
+    <div id="mcq-interface" class="mcq-interface hidden">
+        <div class="mcq-header">
+            <div class="test-info">
+                <h2 id="subject-title">IQ Test</h2>
+                <div class="question-counter">
+                    Question <span id="current-question">1</span> of <span id="total-questions">10</span>
+                </div>
+            </div>
+            <div class="timer">
+                <i class="fas fa-clock"></i>
+                <span id="timer-display">05:00</span>
+            </div>
+            <button class="exit-btn" onclick="exitTest()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="mcq-content">
+            <div class="question-section">
+                <h3 id="question-text">Loading question...</h3>
+            </div>
+
+            <div class="options-section">
+                <div class="options-grid" id="options-container">
+                    <!-- Options will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="mcq-controls">
+                <button class="control-btn" id="prev-btn" onclick="previousQuestion()" disabled>
+                    <i class="fas fa-chevron-left"></i> Previous
+                </button>
+                <button class="control-btn primary" id="next-btn" onclick="nextQuestion()">
+                    Next <i class="fas fa-chevron-right"></i>
+                </button>
+                <button class="control-btn success" id="submit-btn" onclick="submitTest()" style="display: none;">
+                    <i class="fas fa-check"></i> Submit Test
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Warning Modal -->
+    <div id="warning-modal" class="modal hidden">
+        <div class="modal-content warning">
+            <div class="modal-header">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>Warning!</h3>
+            </div>
+            <div class="modal-body">
+                <p id="warning-message">You have exited full-screen mode. Please return to full-screen to continue the
+                    test.</p>
+                <p class="warning-count">Warnings: <span id="warning-count">1</span>/3</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary" onclick="returnToFullscreen()">Return to Full Screen</button>
+                <button class="btn-secondary" onclick="cancelTest()">Cancel Test</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Modal -->
+    <div id="results-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Test Results</h3>
+            </div>
+            <div class="modal-body">
+                <div class="results-summary">
+                    <div class="score-circle">
+                        <span id="score-percentage">0%</span>
+                    </div>
+                    <div class="results-details">
+                        <p>Correct: <span id="correct-count">0</span></p>
+                        <p>Wrong: <span id="wrong-count">0</span></p>
+                        <p>Total: <span id="total-count">0</span></p>
+                    </div>
+                </div>
+                <div id="detailed-results" class="detailed-results">
+                    <!-- Detailed results will be populated here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-primary" onclick="closeResults()">Close</button>
+                <button class="btn-secondary" onclick="retakeTest()">Retake Test</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Saylani Entry Test Practice</h3>
+                    <p>Your gateway to success in Saylani Mass IT Training Program</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Saylani Entry Test Practice. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</html>

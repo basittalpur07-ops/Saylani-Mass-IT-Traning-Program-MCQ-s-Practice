@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Saylani Entry Test Practice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7679492337080449"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Saylani Entry Test Practice</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="faqs.html" class="nav-link active">FAQs</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="terms.html" class="nav-link">Terms</a>
+                <a href="privacy.html" class="nav-link">Privacy</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about our platform and the Saylani entry test</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Search Box -->
+            <div style="max-width: 600px; margin: 0 auto 40px; position: relative;">
+                <input type="text" id="faq-search" placeholder="Search FAQs..." style="
+                    width: 100%;
+                    padding: 15px 50px 15px 20px;
+                    border: 2px solid #e5e7eb;
+                    border-radius: 50px;
+                    font-size: 1rem;
+                    outline: none;
+                    transition: border-color 0.3s ease;
+                " onfocus="this.style.borderColor='#2563eb'" onblur="this.style.borderColor='#e5e7eb'">
+                <i class="fas fa-search" style="
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    color: #9ca3af;
+                "></i>
+            </div>
+
+            <!-- FAQ Categories -->
+            <div style="text-align: center; margin-bottom: 40px;">
+                <button class="faq-category-btn active" onclick="filterFAQs('all')">All Questions</button>
+                <button class="faq-category-btn" onclick="filterFAQs('general')">General</button>
+                <button class="faq-category-btn" onclick="filterFAQs('test')">Test Related</button>
+                <button class="faq-category-btn" onclick="filterFAQs('technical')">Technical</button>
+                <button class="faq-category-btn" onclick="filterFAQs('account')">Account</button>
+            </div>
+
+            <!-- FAQ Items -->
+            <div class="faq-container">
+                <!-- General Questions -->
+                <div class="faq-item" data-category="general">
+                    <div class="faq-question">
+                        <span>What is Saylani Mass IT Training Program?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Saylani Mass IT Training is Pakistan's largest non-profit IT training program that provides free education in various technology fields including Web Development, Mobile App Development, Graphic Design, Digital Marketing, Data Science, AI, Cybersecurity, and Cloud Computing. The program aims to empower underprivileged youth with valuable IT skills.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="general">
+                    <div class="faq-question">
+                        <span>Is this practice platform officially affiliated with Saylani?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>This is an independent practice platform created to help students prepare for the Saylani entry test. While we are not officially affiliated with Saylani Welfare Trust, our content is designed based on the actual test pattern and syllabus to provide the best preparation experience.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="general">
+                    <div class="faq-question">
+                        <span>Is the practice platform completely free?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Following Saylani's philosophy of free education, our practice platform is completely free to use. You can access all subjects, take unlimited practice tests, and view detailed results without any charges.</p>
+                    </div>
+                </div>
+
+                <!-- Test Related Questions -->
+                <div class="faq-item" data-category="test">
+                    <div class="faq-question">
+                        <span>What subjects are covered in the Saylani entry test?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The Saylani entry test covers six main subjects:</p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li><strong>IQ Test:</strong> Logical reasoning and analytical thinking</li>
+                            <li><strong>Computer Science:</strong> Basic computer knowledge and programming concepts</li>
+                            <li><strong>Mathematics:</strong> Arithmetic, algebra, and basic mathematical concepts</li>
+                            <li><strong>Islamiat:</strong> Islamic studies and religious knowledge</li>
+                            <li><strong>General Knowledge:</strong> Current affairs, history, and general awareness</li>
+                            <li><strong>English:</strong> Grammar, vocabulary, and comprehension</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="test">
+                    <div class="faq-question">
+                        <span>How long is each practice test?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Each practice test is timed for 5 minutes by default, but this may vary depending on the number of questions. The actual Saylani entry test typically has a specific time limit, and our practice tests are designed to simulate similar time constraints to help you prepare effectively.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="test">
+                    <div class="faq-question">
+                        <span>Are the questions randomized?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Both the questions and answer options are randomized for each test session. This ensures that you're learning the concepts rather than memorizing question patterns, providing a more effective preparation experience.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="test">
+                    <div class="faq-question">
+                        <span>Can I review my answers after completing a test?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! After completing each test, you'll receive detailed results showing your correct and incorrect answers, along with explanations for each question. This helps you understand your mistakes and learn from them.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="test">
+                    <div class="faq-question">
+                        <span>What happens if I exit full-screen mode during a test?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our anti-cheat system monitors full-screen mode during tests. If you exit full-screen, you'll receive a warning. After 3 warnings, the test will be automatically cancelled to maintain test integrity. This simulates the actual exam environment.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="test">
+                    <div class="faq-question">
+                        <span>Can I pause a test once it's started?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, once a test is started, it cannot be paused. This mimics the actual exam conditions where you must complete the test within the given time limit. However, you can navigate between questions using the Previous and Next buttons.</p>
+                    </div>
+                </div>
+
+                <!-- Technical Questions -->
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <span>What devices and browsers are supported?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our platform is fully responsive and works on all modern devices including:</p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li><strong>Desktop/Laptop:</strong> Windows, Mac, Linux</li>
+                            <li><strong>Mobile:</strong> Android and iOS smartphones</li>
+                            <li><strong>Tablets:</strong> iPad, Android tablets</li>
+                            <li><strong>Browsers:</strong> Chrome, Firefox, Safari, Edge (latest versions recommended)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <span>Do I need to install any software?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No installation required! Our platform is web-based and runs directly in your browser. Simply visit our website and start practicing immediately. Make sure you have a stable internet connection for the best experience.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <span>What should I do if I encounter technical issues?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If you experience any technical issues:</p>
+                        <ol style="margin-left: 20px; margin-top: 10px;">
+                            <li>Refresh your browser and try again</li>
+                            <li>Clear your browser cache and cookies</li>
+                            <li>Try using a different browser</li>
+                            <li>Check your internet connection</li>
+                            <li>If issues persist, contact us through our contact page</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <span>Why does the platform require full-screen mode?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Full-screen mode is required during tests to:</p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li>Simulate actual exam conditions</li>
+                            <li>Prevent cheating and maintain test integrity</li>
+                            <li>Minimize distractions for better focus</li>
+                            <li>Ensure fair assessment for all users</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Account Questions -->
+                <div class="faq-item" data-category="account">
+                    <div class="faq-question">
+                        <span>Do I need to create an account to use the platform?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Currently, no account creation is required. You can start practicing immediately without any registration. However, please note that your progress and results won't be saved between sessions. We may introduce user accounts in future updates for progress tracking.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="account">
+                    <div class="faq-question">
+                        <span>Are my test results saved?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Currently, test results are only available during your current session. Once you close the browser or navigate away, the results are not saved. We recommend taking screenshots of important results for your records.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="test">
+                    <div class="faq-question">
+                        <span>How many times can I take the practice tests?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can take unlimited practice tests! There are no restrictions on the number of attempts. We encourage you to practice as much as needed to build confidence and improve your performance.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="general">
+                    <div class="faq-question">
+                        <span>How often are new questions added?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We regularly update our question bank with new questions and review existing ones for accuracy. Updates typically occur monthly, and we always strive to keep our content aligned with the latest exam patterns and requirements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="test">
+                    <div class="faq-question">
+                        <span>What's the passing score for the actual Saylani entry test?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The passing score for the actual Saylani entry test may vary depending on the number of applicants and available seats. Generally, aiming for 70% or higher gives you a good chance of selection. However, we recommend checking with Saylani directly for the most current requirements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="general">
+                    <div class="faq-question">
+                        <span>Can I suggest improvements or report issues?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We welcome feedback, suggestions, and bug reports. You can reach out to us through our contact page. Your input helps us improve the platform and provide a better experience for all users.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="test">
+                    <div class="faq-question">
+                        <span>Are the practice questions similar to the actual test?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Our questions are designed based on the actual Saylani entry test pattern and syllabus. While we cannot guarantee exact matches, our content covers the same topics and difficulty levels you can expect in the real exam.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Still Have Questions Section -->
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 15px; text-align: center; margin-top: 50px;">
+                <h2><i class="fas fa-question-circle"></i> Still Have Questions?</h2>
+                <p style="margin: 20px 0;">Can't find the answer you're looking for? Our support team is here to help!</p>
+                <a href="contact.html" class="start-btn" style="background: white; color: #2563eb; text-decoration: none;">
+                    <i class="fas fa-envelope"></i> Contact Support
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Saylani Entry Test Practice</h3>
+                    <p>Your gateway to success in Saylani Mass IT Training Program</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Test Subjects</h4>
+                    <ul>
+                        <li><a href="index.html#subjects">IQ Test</a></li>
+                        <li><a href="index.html#subjects">Computer Science</a></li>
+                        <li><a href="index.html#subjects">Mathematics</a></li>
+                        <li><a href="index.html#subjects">English</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Saylani Entry Test Practice. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Search Functionality
+        document.getElementById('faq-search').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question span').textContent.toLowerCase();
+                const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                
+                if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // FAQ Category Filter
+        function filterFAQs(category) {
+            const faqItems = document.querySelectorAll('.faq-item');
+            const categoryBtns = document.querySelectorAll('.faq-category-btn');
+            
+            // Update active button
+            categoryBtns.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter items
+            faqItems.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+            
+            // Clear search
+            document.getElementById('faq-search').value = '';
+        }
+    </script>
+
+    <style>
+        .faq-category-btn {
+            background: #e5e7eb;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .faq-category-btn.active,
+        .faq-category-btn:hover {
+            background: #2563eb;
+            color: white;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .faq-question {
+            background: #2563eb;
+            color: white;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            background: #1e40af;
+        }
+        
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-answer {
+            background: white;
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-answer.active {
+            padding: 20px;
+            max-height: 500px;
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+    </style>
+</html>
+
