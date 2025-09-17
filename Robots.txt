@@ -1,5 +1,5 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://saylani-entry-test-practice.vercel.app/sitemap.xml
+Sitemap: https://basittalpur07-ops.github.io/Saylani-Mass-IT-Traning-Program-MCQ-s-Practice/sitemap.xml
 
